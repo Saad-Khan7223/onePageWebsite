@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <header>
+    <nav class=" navbar  navbar-expand-lg navbar-light bg-light sticky-top">
+      <div class="container-fluid">
+        <!-- logo -->
+        <div class="logo d-flex">
+          <img src="./images/shopping-bag-icon.png" alt="logo">
+          <h3 class="align-self-center">ATTIRE</h3>
+        </div>
+        <!-- menu -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="menu justify-content-center collapse  navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav p-4 ">
+            <li class="nav-item "><a class="nav-link" href="#">Home</a></li>
+            <li class="nav-item "><a class="nav-link" href="#collection">Collection</a></li>
+            <li class="nav-item "><a class="nav-link" href="#specials">Specials</a></li>
+            <li class="nav-item"><a class="nav-link" href="#blogs">Blogs</a></li>
+            <li class="nav-item "><a class="nav-link" href="#about">About US</a></li>
+          </ul>
+        </div>
+        <!-- side menu -->
+        <div class="sidemenu menu fs-3 justify-content-end collapse  navbar-collapse me-5" id="navbarSupportedContent">
+          <ul class="navbar-nav  mx-5">
+            <li class="nav-item">
+            <li class="nav-item ">
+              <a class="nav-link" href="#">
+                <i class="fa-solid fa-cart-shopping"></i>
+              </a>
+            </li>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link" href="#">
+                <i class="fa-solid fa-heart"></i>
+              </a>
+            </li>
+            <li>
+              <a class="nav-link" href="#">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+    </nav>
+  </header>
+  <!-- Carosuel -->
+  <section class="mb-5">
+    <div class="slider container-fluid">
+      <div id="carouselExampleControls" class="carousel slide align-items-center" data-bs-ride="carousel">
+        <div class="carousel-inner ">
+          <div class="carousel-item active text-center text-secondary carMargin ">
+            <h3>Best Collection</h3>
+            <h2 class="fs-1">New Arrival</h2>
+            <button class="btn btn-light rounded-pill text-primary">Shop Now</button>
+
+
+          </div>
+          <div class="carousel-item text-center text-secondary carMargin">
+
+            <h3>Best Prices & Offers</h3>
+            <h2 class="fs-1">Flat 50% OFF</h2>
+            <button class="btn btn-light rounded-pill text-primary">Buy Now</button>
+
+          </div>
+          <div class="carousel-item text-center text-secondary carMargin">
+
+            <h3>Best Offers</h3>
+            <h2 class="fs-1">Shopping Season</h2>
+            <button class="btn btn-light rounded-pill text-primary">Shop Now</button>
+
+          </div>
+        </div>
+        <button class="carousel-control-prev slidemargin" type="button" data-bs-target="#carouselExampleControls"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next slidemargin" type="button" data-bs-target="#carouselExampleControls"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </section>
+  <!-- collection -->
+
+  <section id="collection">
+    <div class=" blogs col-sm-12 col-md-12 container d-flex justify-content-center">
+      <h2 class=" border border-top-0 border-end-0 border-bottom-0 border-danger border-2 px-2 fs-1">Collections
+      </h2>
+    </div>
+    <div class="buttons d-flex justify-content-center flex-wrap ">
+      <div class="mx-2 my-2 ">
+        <button type="button" class="btn btn-outline-success rounded-pill px-4" data-filter="*">All</button>
+      </div>
+
+      <div class="mx-2 my-2  ">
+        <button type="button" class="btn btn-outline-success rounded-pill px-4" data-filter=".newArrival">New Arrival</button>
+      </div>
+      <div class="mx-2 my-2">
+        <button type="button" class="btn btn-outline-success rounded-pill px-4" data-filter=".featured">Featured</button>
+      </div>
+      <div class="mx-2 my-2">
+        <button type="button" class="btn btn-outline-success rounded-pill px-4" data-filter=".bestSellers">Best Sellers</button>
+      </div>
+    </div>
+
+    <!-- Products -->
+    <div class="row  mb-4 gx-0 container mx-auto   product-item">
+      <!-- 1 -->
+      <div class="card col-sm-12 col-md-3 mx-4 mt-2 item featured">
+        <img src="./images/c_formal_gray_shirt.png" class="card-img-top w-100 mt-2 " alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Grey Shirt</h5>
+          <p class="card-text">$45</p>
+          <p>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </p>
+        </div>
+      </div>
+
+      <!-- 2 -->
+      <div class="card col-sm-12 col-md-3 mx-4 mt-2 item featured ">
+        <img src="./images/c_pant_girl.png" class="card-img-top w-100 mt-2" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Pant</h5>
+          <p class="card-text">$45</p>
+          <p>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </p>
+        </div>
+      </div>
+      <!-- 3 -->
+
+      <div class="card col-sm-12 col-md-3 mx-4 mt-2 item bestSellers">
+        <img src="./images/c_polo-shirt.png" class="card-img-top w-100 mt-2" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Shirt</h5>
+          <p class="card-text">$45</p>
+          <p>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </p>
+        </div>
+      </div>
+      <!-- 4 -->
+
+      <div class="card col-sm-12 col-md-3 mx-4 mt-2 item bestSellers">
+        <img src="./images/c_t-shirt_men.png" class="card-img-top w-100 mt-2" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">T-Shirt</h5>
+          <p class="card-text">$45</p>
+          <p>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </p>
+        </div>
+      </div>
+      <!-- 5 -->
+
+      <div class="card col-sm-12 col-md-3 mx-4 mt-2 item newArrival">
+        <img src="./images/c_western-shirt.png" class="card-img-top w-100 mt-2" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Western Shirt</h5>
+          <p class="card-text">$45</p>
+          <p>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </p>
+        </div>
+      </div>
+      <!-- 6 -->
+      <div class="card col-sm-12 col-md-3 mx-4 mt-2 item newArrival">
+        <img src="./images/c_undershirt.png" class="card-img-top w-100 mt-2" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Under Shirt</h5>
+          <p class="card-text">$45</p>
+          <p>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </p>
+        </div>
+      </div>
+
+      <!-- 7 -->
+      <div class="card col-sm-12 col-md-3 mx-4 mt-2 item newArrival">
+        <img src="./images/c_tunic-shirt_girl.png" class="card-img-top w-100 mt-2" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Tunic Shirt</h5>
+          <p class="card-text">$45</p>
+          <p>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </p>
+        </div>
+      </div>
+
+      <!-- 8 -->
+
+      <div class="card col-sm-12 col-md-3 mx-4 mt-2 item">
+        <img src="./images/c_polo-shirt.png" class="card-img-top w-100 mt-2" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Polo Shirt</h5>
+          <p class="card-text">$45</p>
+          <p>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+  <!-- special -->
+  <section id="specials" class="mb-4">
+    <div class="special col-sm-12 col-md-12 container d-flex justify-content-center">
+      <h2 class=" border border-top-0 border-end-0 border-bottom-0 border-danger border-2 px-2 fs-1">Specials</h2>
+    </div>
+    <div class="container-fulid gx-0 row mx-5 justify-content-center ">
+      <!-- 1 -->
+      <div class="card col-sm-12 col-md-2 mx-2 mt-2">
+        <img src="./images/special_product_1.jpg" class="card-img-top w-100 mt-2" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Grey Shirt</h5>
+          <p class="card-text">$45</p>
+          <a href="#" class="btn  bg-dark text-light rounded-pill">Add to cart</a>
+        </div>
+      </div>
+      <!-- 2 -->
+      <div class="card col-sm-12 col-md-2 mx-2 mt-2">
+        <img src="./images/special_product_2.jpg" class="card-img-top w-100 mt-2" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Grey Shirt</h5>
+          <p class="card-text">$45</p>
+          <a href="#" class="btn  bg-dark text-light rounded-pill">Add to cart</a>
+        </div>
+      </div>
+      <!-- 3 -->
+      <div class="card col-sm-12 col-md-2 mx-2 mt-2  ">
+        <img src="./images/special_product_3.jpg" class="card-img-top w-100 mt-2" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Grey Shirt</h5>
+          <p class="card-text">$45</p>
+          <a href="#" class="btn  bg-dark text-light rounded-pill">Add to cart</a>
+        </div>
+      </div>
+      <!-- 4 -->
+
+      <div class="card col-sm-12 col-md-2 mx-2 mt-2  ">
+        <img src="./images/special_product_4.jpg" class="card-img-top w-100 mt-2" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Grey Shirt</h5>
+          <p class="card-text">$45</p>
+          <a href="#" class="btn  bg-dark text-light rounded-pill">Add to cart</a>
+        </div>
+      </div>
+
+
+    </div>
+  </section>
+
+
+  <!-- blogs -->
+  <section id="blogs" class="gx-0 mx-5  ">
+
+    <div class=" blogs col-sm-12 col-md-12 container d-flex justify-content-center">
+      <h2 class=" border border-top-0 border-end-0 border-bottom-0 border-danger border-2 px-2 fs-1">Our Latest Blogs
+      </h2>
+    </div>
+
+    <!-- 1 -->
+    <div class="row container   mt-4 justify-content-center  ">
+      <div class="card col-sm-12 mx-3 col-md-3 mt-2  ">
+        <img src="./images/blog_1.jpg" class="card-img-top w-100 mt-2" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">ASAD</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+            content.</p>
+          <a href="#" class="btn  bg-dark text-light rounded-pill">Read More</a>
+        </div>
+      </div>
+
+      <!-- 2-->
+
+      <div class="card mx-3  col-sm-12 col-md-3 mt-2  ">
+        <img src="./images/blog_2.jpg" class="card-img-top w-100 mt-2" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Shopping</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+            content.</p>
+          <a href="#" class="btn  bg-dark text-light rounded-pill">Read More</a>
+        </div>
+      </div>
+
+      <!-- 3 -->
+
+
+      <div class="card col-sm-12 mx-3 col-md-3 mt-2 ">
+        <img src="./images/blog_3.jpg" class="card-img-top w-100 mt-2" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">ALi</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+            content.</p>
+          <a href="#" class="btn  bg-dark text-light rounded-pill">Read More</a>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+
+
+
+  <!-- about -->
+  <section class="row mb-4 container mt-5" id="about">
+    <div class="about col-md-6 mb-3 ">
+      <img src="./images/about_us.jpg" class="w-100 rounded" alt="About">
+    </div>
+    <div class="col-md-6 align-self-center ">
+      <h2 class="border border-top-0 border-end-0 border-bottom-0 border-danger border-2 px-2">About</h2>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi, beatae! Lorem ipsum dolor sit amet
+        consectetur adipisicing elit. Architecto, atque nam! Corrupti molestias eos, quidem laboriosam ex beatae
+        consectetur ipsa ab similique dolor tempora saepe, molestiae, rerum soluta doloremque error. Nihil molestias,
+        ratione laboriosam ipsam perspiciatis magni fuga quaerat delectus!
+      </p>
+    </div>
+  </section>
+  <!-- footer -->
+  <footer class="bg-dark text-secondary row container-fluid gx-0 rounded">
+    <div class="attire col-sm-12 mx-2  col-md-3 mt-2">
+      <h2>ATTIRE</h2>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem esse dolorum vero reprehenderit unde et
+        natus, voluptas, placeat architecto rem illo incidunt blanditiis deserunt numquam ratione eos aliquam explicabo
+        repudiandae ex eveniet maxime! Voluptatibus non veritatis delectus fugit, quae veniam?</p>
+    </div>
+    <div class="links col-sm-12 col-md-2 mt-2">
+      <h2>Links</h2>
+      <ul class="nav flex-column ">
+        <li class="nav-item">
+          <a class="nav-link text-secondary " href="#">>Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-secondary" href="#collection">>Collection</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-secondary" href="#blogs">>Blogs</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-secondary" href="#about">>About
+            Us</a>
+        </li>
+      </ul>
+    </div>
+    <div class="contact col-sm-12 col-md-2 mt-2 ">
+      <h2>Contact Us</h2>
+      <h6 class="my-3"><i class="fa-solid fa-house "></i> Albert Street , New York</h6>
+      <h6 class="my-3"><i class="fa-solid fa-envelope"></i> abc@gmail.com</h6>
+      <h6 class="my-3"><i class="fa-solid fa-phone"></i> 090078601</h6>
+    </div>
+    <div class="follow col-sm-12 col-md-3 mt-2">
+      <h2 class="ml-2">Follow Us</h2>
+      <div class="d-flex justify-content-around">
+        <h4><i class="fa-brands fa-facebook"></i></h4>
+        <h4><i class="fa-brands fa-instagram"></i></h4>
+        <h4><i class="fa-brands fa-twitter"></i></h4>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+ 
+    
+
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    <script>
+        $('.product-item').isotope({
+        itemSelector: '.item',
+        layoutMode: 'fitRows',
+        });
+        $('.buttons div button').click(function(){
+            $('.buttons div button').removeClass(' btn-outline-sucess');
+
+            $(this).addClass(' btn-outline-warning');
+
+            var selector = $(this).attr('data-filter');
+           
+
+            $(".product-item").isotope({
+
+                filter:selector
+
+});
+
+return false
+});
+    </script>
+</body>
+
+</html>
